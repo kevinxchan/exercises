@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/backtracking-to-find-all-subsets/
 
 class Solution:
 
@@ -28,7 +29,7 @@ class Solution:
 			seen.append(num)
 		return res
 
-# TIME: O(2^n) since there exists 2^n subsets for a set.
+# TIME: O(2^n) since there exists 2^n subsets for a set, O(n * 2^n) for iterative approach (checking if num in seen).
 # SPACE: O(2^n) to hold all the solutions in res.
 array = [1, 2, 2, 3, 3, 3, 4, 2]
 subsets = Solution().subsets(array)
